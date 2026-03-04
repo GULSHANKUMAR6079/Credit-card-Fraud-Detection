@@ -81,7 +81,7 @@ streamlit run app.py
 
 ---
 
-## 🎯 IQM JD Coverage
+## 🎯TECH STACK
 
 - ✅ Python + Pandas + Scikit-learn
 - ✅ SQL (SQLite) for data ingestion & querying
@@ -107,4 +107,4 @@ streamlit run app.py
 
 ## 👤 Author
 
-Built for **IQM Corporation Data Science Interview, 2026**
+GULSHAN KUMAR
