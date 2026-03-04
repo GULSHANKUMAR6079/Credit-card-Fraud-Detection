@@ -2,7 +2,7 @@
 dashboard/app.py
 ----------------
 Streamlit dashboard for stakeholder-facing fraud detection insights.
-Run with: streamlit run dashboard/app.py
+Run with: streamlit run app.py
 """
 
 import sys
@@ -497,7 +497,7 @@ elif page == "⚡ Online Pipeline":
         st.image(str(compare_img), use_column_width=True)
 
     if not online_img.exists():
-        st.warning("Run `python src/online_pipeline.py` to generate the online learning charts.")
+        st.warning("Run `python online_pipeline_demo.py` to generate the online learning charts.")
         st.code("""
 # Simulate streaming fraud detection
 from river import tree, preprocessing, compose, metrics

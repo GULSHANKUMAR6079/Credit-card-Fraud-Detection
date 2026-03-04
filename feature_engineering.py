@@ -128,7 +128,7 @@ def prepare_datasets(df: pd.DataFrame,
 
 if __name__ == "__main__":
     import sys
-    sys.path.insert(0, str(BASE_DIR / "src"))
+    sys.path.insert(0, str(BASE_DIR))
     from data_loader import load_data
 
     df, conn, _ = load_data()

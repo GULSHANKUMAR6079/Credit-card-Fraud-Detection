@@ -12,10 +12,10 @@ import numpy as np
 from pathlib import Path
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-BASE_DIR   = Path(__file__).resolve().parent
-DATA_DIR   = BASE_DIR / "data"
-DB_PATH    = DATA_DIR / "fraud.db"
-CSV_PATH   = BASE_DIR / "creditcard.csv"
+BASE_DIR    = Path(__file__).resolve().parent
+DATA_DIR    = BASE_DIR / "data"
+DB_PATH     = DATA_DIR / "fraud.db"
+CSV_PATH    = BASE_DIR / "creditcard.csv"
 SAMPLE_PATH = DATA_DIR / "sample_creditcard.csv"
 
 
@@ -106,7 +106,7 @@ SQL_QUERIES = {
 }
 
 
-def run_sql_queries(conn: sqlite3.Connection) -> dict[str, pd.DataFrame]:
+def run_sql_queries(conn: sqlite3.Connection) -> dict:
     """Execute all analytical SQL queries and return results as DataFrames."""
     results = {}
     for name, query in SQL_QUERIES.items():
@@ -119,7 +119,7 @@ def run_sql_queries(conn: sqlite3.Connection) -> dict[str, pd.DataFrame]:
 
 
 # ── Main data loading pipeline ─────────────────────────────────────────────────
-def load_data() -> tuple[pd.DataFrame, sqlite3.Connection, dict]:
+def load_data():
     """
     Full data loading pipeline:
     1. Read CSV (or generate synthetic data)
