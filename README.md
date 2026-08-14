@@ -2,7 +2,7 @@
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io)
 
-A production-grade end-to-end fraud detection pipeline covering **offline batch ML** and **online streaming ML** with a live Streamlit dashboard — built for IQM Corporation's Data Scientist interview.
+A production-grade end-to-end fraud detection pipeline covering **offline batch ML** and **online streaming ML** with a live Streamlit dashboard.
 
 ---
 
