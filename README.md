@@ -8,8 +8,8 @@ A production-grade end-to-end fraud detection pipeline covering **offline batch 
 
 ## 🚀 Live Demo
 
-> **[→ Launch Dashboard](https://share.streamlit.io)**  
-> *(Replace with your Streamlit Community Cloud URL after deployment)*
+> **[→ Launch Dashboard](https://credit-card-fraud-detection-79.streamlit.app)**  
+
 
 ---
 
@@ -100,8 +100,6 @@ streamlit run app.py
 - 284,807 transactions | 492 fraud cases (0.17%)
 - Features: V1–V28 (PCA-anonymized) + Time + Amount + Class
 - 🔗 [Download here](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
-
-> **Note:** The CSV is not included in this repo (150 MB). The app automatically uses synthetic preview data if the CSV is not present.
 
 ---
 
